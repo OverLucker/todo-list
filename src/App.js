@@ -1,28 +1,6 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
-//
-// class ToDoCheckbox extends Component {
-//   constructor(props){
-//     super(props);
-//     this.state = {'done': this.props.done}
-//     // this.toggle = this.toggle.bind(this);
-//   }
-//   getInitialState() {
-//     return {
-//       'done': this.props.done
-//     }
-//   }
-//   toggle() {
-//     // localStorage.setItem()
-//     this.setState({done: !this.state.done});
-//   }
-//   render() {
-//     return (
-//       <div className="circle non-selectable" onClick={this.toggle.bind(this)}>{this.state.done ? 'X' : '\u00A0'}</div>
-//     );
-//   }
-// }
+
 
 const ToDoCheckbox = ({ onClick, done }) => {
   return (
