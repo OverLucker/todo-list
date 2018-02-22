@@ -1,0 +1,26 @@
+.item {
+  display: block;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: .5em;
+}
+
+.item__name {
+  display: inline-block;
+  line-height: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.item__name:hover {
+  background-color: #CFCECE;
+}
+
+.item__name > input {
+  background-color: inherit;
+  font-size: 1rem;
+  border: none;
+}
+
+.item__name > input:focus {
+  outline: none;
+}

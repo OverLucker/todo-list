@@ -1,6 +1,7 @@
 html {
     font-size: 1.5em;
 }
+
 body {
   background-color: #fefcfb;
 }
@@ -24,56 +25,6 @@ body {
 .App-title {
   font-size: 1.5em;
   padding: 1em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-/* .App-body {
-  width: 50%;
-} */
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.right {
-  float: right;
-  /* margin-left: auto; */
-  /* margin-right: 0px; */
-}
-
-.item {
-  display: block;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: .5em;
-}
-
-.item__name {
-  display: inline-block;
-  line-height: 1rem;
-  border-bottom: 2px solid black;
-  /* border-bottom: 2px; */
-}
-
-.item__name:hover {
-  background-color: #CFCECE;
-  /* border-bottom: 3px solid black; */
-}
-
-.item__name > input {
-  /* line-height: 1rem; */
-  /* background-color: #fefcfb; */
-  background-color: inherit;
-  font-size: 1rem;
-  border: none;
-}
-
-.item__name > input:focus {
-  outline: none;
 }
 
 .circle {
