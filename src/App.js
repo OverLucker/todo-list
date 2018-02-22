@@ -13,26 +13,10 @@ const ToDoItem = ({onClick, onChange, done, name}) => {
     <div className="item">
       <ToDoCheckbox done={done} onClick={onClick}/>
       <div className="item__name">
-        <input onChange={onChange(name)} value={name}/>
+        <input onChange={onChange} value={name}/>
       </div>
     </div>
   );
-}
-
-class ToDoItemAdd extends Component {
-  constructor(props){
-    super(props);
-    this.state = { name: ""};
-  }
-
-  onChange(){
-
-  }
-  render() {
-    return (
-      <input onChange={this.onChange.bind(this)} value={this.state.name} className="item__name" ref="name" placeholder="Еще одна заметка"/>
-    );
-  }
 }
 
 class App extends Component {
@@ -54,7 +38,7 @@ class App extends Component {
     localStorage.setItem('todo', JSON.stringify(todos));
   }
 
-  setItemName = (index) => (name) => (event) => {
+  setItemName = (index) => (event) => {
     const { todos } = this.state;
     todos[index].name = event.target.value;
     this.setState({ todos });
